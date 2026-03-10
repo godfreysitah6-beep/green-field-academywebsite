@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#2e7d32;
+    padding:15px 50px;
+    position: sticky;
+    z-index: 1000 ;
+    top: 0;
+}
+
+/* LOGO */
+
+.logo{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    position:sticky
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+/* EACH LINK ITEM */
+
+.nav-links li{
+    margin-left:25px;
+}
+
+/* LINK STYLE */
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* HOVER EFFECT */
+
+.nav-links a:hover{
+    color:#c8e6c9;
+}
+
+
+/*Hero section*/
+.Hero{
+   height: 90vh; 
+   width: 100%;
+
+
+background: url("https://images.pexels.com/photos/1164572/pexels-photo-1164572.jpeg")
+no-repeat center center/cover;
+
+position: relative;
+}
+
+/* DARK OVERLAY */
+.hero-overlay{
+    position:absolute;
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.6);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+/* HERO CONTENT */
+.hero-content{
+    color:white;
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+/* BUTTONS */
+.hero-buttons a{
+    text-decoration:none;
+    padding:14px 30px;
+    margin:10px;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary{
+    background:#2e7d32;
+    color:white;
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary{
+    background:white;
+    color:#2e7d32;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+}
+
+/* Main row container */
+.info-row {
+    display: flex;          /* Enables Flexbox */
+    padding: 40px;
+    gap: 20px;              /* Space between columns */
+}
+
+/* Each column box */
+.info-box {
+    flex: 1;                /* Makes all columns equal width */
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Headings inside boxes */
+.info-box h2 {
+    text-align: center;
+    color: #1e3a8a;
+}
+
+/* Paragraph styling */
+.info-box p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Photo gallery container */
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background-color: #eef2f7;
+}
+
+/* Each photo card */
+.photo-box {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden; /* prevents image overflow */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Images */
+.photo-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* prevents distortion */
+}
+
+/* Caption */
+.photo-box h3 {
+    text-align: center;
+    padding: 15px;
+    color: #1e3a8a;
+}
+
+/* Hover effect */
+.photo-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
